@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vephla Uni - Empowering Future Tech Leaders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section with Responsive Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Vephla Uni</div>
+        <div class="burger" onclick="toggleNav()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Vephla Uni</h1>
+      <p>
+        At Vephla Uni, we are dedicated to empowering future tech leaders with
+        cutting-edge skills. Explore our courses in Full Stack Software
+        Engineering, UI/UX Design, Front-End Engineering, Data Analytics, and
+        more. Start your journey towards a rewarding tech career with us!
+      </p>
+      <button onclick="openModal()">Learn More About Our Programs</button>
+    </section>
+
+    <!-- Modal Pop-up -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Our Courses</h2>
+        <p>
+          Vephla Uni offers a variety of courses designed to equip you with the
+          skills needed to thrive in today's tech-driven world:
+        </p>
+        <ul>
+          <li>Full Stack Software Engineering</li>
+          <li>UI/UX Design</li>
+          <li>Front-End Engineering</li>
+          <li>Data Analytics</li>
+          <li>Cloud Computing</li>
+        </ul>
+        <p>
+          Join us today and gain hands-on experience with industry experts. Our
+          programs are tailored to prepare you for real-world challenges.
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <section class="accordion-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-button">What courses do you offer?</button>
+          <div class="accordion-content">
+            <p>
+              We offer courses in Full Stack Software Engineering, UI/UX Design,
+              Front-End Engineering, Data Analytics, and Cloud Computing.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">How can I enroll?</button>
+          <div class="accordion-content">
+            <p>
+              You can enroll through our website. Visit the courses section and
+              select the course you're interested in to begin the enrollment
+              process.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">Where are you located?</button>
+          <div class="accordion-content">
+            <p>
+              We are located in Lagos, Nigeria, but offer courses online
+              globally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+      <h2>Our Location</h2>
+      <div id="map"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Vephla Uni. Empowering Future Tech Leaders.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
